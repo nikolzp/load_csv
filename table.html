@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Отправка файла на сервер</title>
+    <style>.table{width:768px;} </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Назад к выбру файла</a>
+
+<table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Staff</th>
+      <th scope="col">Product</th>
+      <th scope="col">Qty</th>
+    </tr>
+  </thead>
+    % for i in new_list:
+     <tr> 
+        % for a in i:
+            <td>{{a}}</td>
+        % end
+         </tr>
+    % end 
+  
+  </table>
+</body>
+</html>
